@@ -1,7 +1,6 @@
 set nocompatible
-syntax enable
+syntax on
 filetype plugin indent on
-
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
@@ -16,7 +15,9 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'guns/vim-clojure-static'
 
+" javascript
 Bundle "pangloss/vim-javascript"
+Plugin 'scrooloose/syntastic'
 
 Plugin 'flazz/vim-colorschemes'
 
@@ -34,13 +35,15 @@ Plugin 'tpope/vim-commentary'
 
 Plugin 'jpalardy/vim-slime'
 
+Plugin 'kien/rainbow_parentheses.vim'
+
 " I might want some of these for clojure
 
-" Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-fireplace'
 
 " Plugin 'tpope/vim-dispatch'
 
-" Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-classpath'
 
 " Plugin 'tpope/vim-projectionist'
 
@@ -66,6 +69,9 @@ map <C-n> :NERDTreeToggle<CR>
 map <A-Left> :tabp<CR>
 map <A-Right> :tabn<CR>
 map <C-t> :tabnew<CR>
+" can escape to normal mode by typing "fd" quickly
+" learned this trick from spacemacs!
+:imap fd <Esc>
 
 set smartindent
 set tabstop=4
@@ -73,9 +79,17 @@ set shiftwidth=4
 set expandtab
 set t_Co=256
 
+" clojure specific tabstops
+autocmd Filetype clojure setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
+" js tabstops
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+
 colorscheme wombat256i
 
 " Show linenumbers
 set nu
 
 let g:slime_target = "tmux"
+
+" syntastic lint integration
+let g:syntastic_check_on_open=1
