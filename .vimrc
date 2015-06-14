@@ -21,6 +21,8 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'flazz/vim-colorschemes'
 
+Plugin 'mxw/vim-jsx'
+
 Plugin 'vim-scripts/paredit.vim'
 
 Plugin 'bling/vim-airline'
@@ -58,8 +60,8 @@ filetype plugin indent on
 autocmd! bufwritepost .vimrc source %
 
 " Better copy and paste
-set mouse=a
-set bs=2
+" set mouse=a
+" set bs=2
 
 " nerdtree automatically if no file at startup
 autocmd StdinReadPre * let s:std_in=1
@@ -93,3 +95,16 @@ let g:slime_target = "tmux"
 
 " syntastic lint integration
 let g:syntastic_check_on_open=1
+
+" whoops, forgot to type sudo (or .vimrc is screwed up for root user and I
+" don't feel like figuring that out)
+cmap w!! w !sudo tee > /dev/null %
+
+" leader commands
+:let mapleader = "\<Space>"
+" open file
+nnoremap <Leader>o :CtrlP<CR>
+" write file
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>W :w !sudo tee > /dev/null %<CR>
+nnoremap <Leader>qq :q!<CR>

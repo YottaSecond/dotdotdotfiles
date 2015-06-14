@@ -95,3 +95,7 @@ export PATH="$HOME/local/bin:$PATH"
 
 ### n node installer
 export N_PREFIX="$HOME/local"
+
+# map touchscreen (hopefully)
+~/mapTouchscreen.sh
+eval $(dircolors ~/.dircolors)
