@@ -99,3 +99,6 @@ export N_PREFIX="$HOME/local"
 # map touchscreen (hopefully)
 ~/mapTouchscreen.sh
 eval $(dircolors ~/.dircolors)
+
+bindkey -v
+bindkey -M viins 'fd' vi-cmd-mode
