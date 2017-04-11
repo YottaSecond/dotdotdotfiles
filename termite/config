@@ -1,55 +1,43 @@
-# Solarized dark color scheme 
-[colors]
-#solarized-dark
-# foreground = #839496
-# foreground_bold = #eee8d5
-# background = rgba(0,43,54,0.9)
-# color0 = #073642
-# color1 = #dc322f
-# color2 = #859900
-# color3 = #b58900
-# color4 = #268bd2
-# color5 = #d33682
-# color6 = #2aa198
-# color7 = #eee8d5
-# color8 = #002b36
-# color9 = #cb4b16
-# color10 = #586e75
-# color11 = #657b83
-# color12 = #839496
-# color13 = #6c71c4
-# color14 = #93a1a1
-# color15 = #fdf6e3
-# cursor = #93a1a1
-
-#brewer-dark
-foreground = #b7b8b9
-foreground_bold = #eee8d5
-background = rgba(12,13,14,0.9)
-color0 = #0c0d0e
-color1 = #e31a1c
-color2 = #31a354
-color3 = #dca060
-color4 = #3182bd
-color5 = #756bb1
-color6 = #80b1d3
-color7 = #b7b8b9
-color8 = #737475
-color9 = #e31a1c
-color10 = #31a354
-color11 = #dca060
-color12 = #3182bd
-color13 = #756bb1
-color14 = #80b1d3
-color15 = #fcfdfe
-cursor = #93a1a1
-#foreground_dim = #888888
-# if unset, will reverse foreground and background
-highlight = #839496
-
-# colors from color0 to color254 can be set
-
 [options]
-font = Monospace 11
-font = Terminus (TTF) 11
-font = Droid Sans Mono 11
+font = SourceCodePro-Regular 16
+
+[colors]
+#brewer-dark (but w/ a slightly brighter background)
+
+# special
+foreground      = #b7b8b9
+foreground_bold = #b7b8b9
+cursor          = #b7b8b9
+background      = #191315
+
+# black
+color0  = #0c0d0e
+color8  = #737475
+
+# red
+color1  = #e31a1c
+color9  = #e31a1c
+
+# green
+color2  = #31a354
+color10 = #31a354
+
+# yellow
+color3  = #dca060
+color11 = #dca060
+
+# blue
+color4  = #3182bd
+color12 = #3182bd
+
+# magenta
+color5  = #756bb1
+color13 = #756bb1
+
+# cyan
+color6  = #80b1d3
+color14 = #80b1d3
+
+# white
+color7  = #b7b8b9
+color15 = #fcfdfe
