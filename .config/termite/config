@@ -1,5 +1,5 @@
 [options]
-font = SourceCodePro-Regular 16
+font = SourceCodePro 16
 
 [colors]
 #brewer-dark (but w/ a slightly brighter background)
