@@ -2,13 +2,13 @@
 font = SourceCodePro 16
 
 [colors]
-#brewer-dark (but w/ a slightly brighter background)
+#brewer-dark
 
 # special
 foreground      = #b7b8b9
 foreground_bold = #b7b8b9
 cursor          = #b7b8b9
-background      = #191315
+background      = #0c0d0e
 
 # black
 color0  = #0c0d0e
