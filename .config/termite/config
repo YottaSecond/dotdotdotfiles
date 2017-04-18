@@ -8,7 +8,7 @@ font = SourceCodePro 16
 foreground      = #b7b8b9
 foreground_bold = #b7b8b9
 cursor          = #b7b8b9
-background      = #0c0d0e
+background      = rgba(0, 0, 0, 0.7)
 
 # black
 color0  = #0c0d0e
