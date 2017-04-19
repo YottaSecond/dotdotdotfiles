@@ -153,3 +153,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+#autostarts
+exec --no-startup-id compton -b -c -f
+exec --no-startup-id mopidy
