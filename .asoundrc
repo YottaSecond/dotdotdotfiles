@@ -1,0 +1,9 @@
+#make my USB card (focusrite scarlett 2i4) default
+pcm.scarlett {
+  type plug
+  slave {
+    pcm "hw:USB"
+  }
+}
+
+pcm.!default= scarlett
