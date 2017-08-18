@@ -1,3 +1,5 @@
 xbindkeys
-xrandr --output DP1-2 --mode 1920x1080 --rate 60.00 --output DP1-1 --mode 1920x1080 --rate 60.00 --crtc 0 --same-as DP1-2 --output eDP1 --mode 1920x1080 --rate 60.05 --same-as DP1-2
-feh --recursive --randomize --bg-scale ~/.wallpaper/
+#xrandr --output DP1-2 --mode 1920x1080 --rate 60.00 --output DP1-1 --mode 1920x1080 --rate 60.00 --crtc 0 --same-as DP1-2 --output eDP1 --mode 1920x1080 --rate 60.05 --same-as DP1-2
+xrandr --output DP1-2 --mode 1920x1080 --rate 60.00 --output eDP1 --mode 1920x1080 --same-as DP1-2
+
+#feh --recursive --randomize --bg-scale ~/.wallpaper/
