@@ -2,3 +2,6 @@
   co = checkout
   st = status
   lg = log
+[user]
+	email = ovaltinevortex@gmail.com
+	name = Brian Fay
